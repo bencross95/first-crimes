@@ -1,34 +1,52 @@
+@font-face {
+  font-family: 'spaceGrotesk-Light';
+  src:  url('fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('fonts/SpaceGrotesk-Light.woff') format('woff');
+
+  font-family: 'spaceGrotesk-Bold';
+  src:  url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+        url('fonts/SpaceGrotesk-Bold.woff') format('woff');
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont,
+  font-family: 'spaceGrotesk-Light', -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                helvetica, 'helvetica neue',
                ubuntu,
                roboto, noto,
                'segoe ui', arial,
                sans-serif;
-  /* background-color: #FFFCEB;
-  color: #111111; */
+}
+
+p {
+  font-weight: 300;
+  line-height: 90px;
+  font-size: 80px;
+  letter-spacing: -0.02em;
+  /* vertical-align: bottom; */
+  margin: 0;
+}
+
+
+h5 {
+
+  font-weight: 300;
+  /* line-height: 90px; */
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  /* vertical-align: bottom; */
+  margin: 0;
 }
 
 
 
 
-
-.near-black { color: #111111 }
-.bg-washed-yellow { background-color: #FFFCEB }
-
-
-.dark-blue { color: #00449E }
-.bg-washed-red { background-color: #FFDFDF }
-
-
-.red { color: #FF4136 }
-.bg-near-white { background-color: #F4F4F4 }
-
-
-.navy { color: #001B44 }
-.bg-washed-yellow { background-color: #FFFCEB }
-
-
-.black { color: #000000 }
-.bg-washed-blue { background-color: #F6FFFE }
+miniTitle {
+  font-family: 'spaceGrotesk-Bold', -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+}
