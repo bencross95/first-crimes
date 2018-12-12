@@ -1,15 +1,13 @@
 @font-face {
-  font-family: 'spaceGrotesk-Light';
-  src:  url('fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-        url('fonts/SpaceGrotesk-Light.woff') format('woff');
+  font-family: 'Ogg-Roman';
+  src:  url('fonts/Ogg-Roman.woff2') format('woff2'),
+        url('fonts/Ogg-Roman.woff') format('woff');
 
-  font-family: 'spaceGrotesk-Bold';
-  src:  url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-        url('fonts/SpaceGrotesk-Bold.woff') format('woff');
+
 }
 
 body {
-  font-family: 'spaceGrotesk-Light', -apple-system, BlinkMacSystemFont,
+  font-family: 'Ogg-Roman', -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                helvetica, 'helvetica neue',
                ubuntu,
@@ -18,12 +16,12 @@ body {
                sans-serif;
 }
 
-p {
+
+h2 {
   font-weight: 300;
-  line-height: 90px;
-  font-size: 80px;
+  line-height: 110px;
+  font-size: 100px;
   letter-spacing: -0.02em;
-  /* vertical-align: bottom; */
   margin: 0;
 }
 
@@ -41,12 +39,21 @@ h5 {
 
 
 
-miniTitle {
-  font-family: 'spaceGrotesk-Bold', -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+/* .miniTitle {
+  position: relative;top:-11px ;font-size: 50px; font-family: 'spaceGrotesk-Bold';
+} */
+
+
+.scloud {
+  margin-right:-20px;
+  margin-top:-100px;
+  margin-bottom:-50px;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
+  /* width: 400;
+  height: 166; */
+}
+
+
+.bigText {
+
 }
