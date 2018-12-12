@@ -14,6 +14,7 @@ body {
                roboto, noto,
                'segoe ui', arial,
                sans-serif;
+  /* overflow: hidden; */
 }
 
 
@@ -26,23 +27,48 @@ h2 {
 }
 
 
-h5 {
-
-  font-weight: 300;
-  /* line-height: 90px; */
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  /* vertical-align: bottom; */
-  margin: 0;
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.footerText {
+  position: fixed;
+  right: 1vw;
+  bottom:-20px;
+  /* letter-spacing: -0.02em; */
+  margin: 0;
+
+}
 
 
-/* .miniTitle {
-  position: relative;top:-11px ;font-size: 50px; font-family: 'spaceGrotesk-Bold';
-} */
-
+.footerLogo {
+  position: fixed;
+  left: 22px;
+  bottom:-20px;
+  /* letter-spacing: -0.02em; */
+  margin: 0;
+}
 
 .scloud {
   margin-right:-20px;
@@ -56,4 +82,12 @@ h5 {
 
 .bigText {
 
+}
+
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  left: 350px;
+  top: 100px;
 }
