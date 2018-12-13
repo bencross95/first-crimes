@@ -2,9 +2,8 @@
   font-family: 'Ogg-Roman';
   src:  url('fonts/Ogg-Roman.woff2') format('woff2'),
         url('fonts/Ogg-Roman.woff') format('woff');
-
-
 }
+
 
 body {
   font-family: 'Ogg-Roman', -apple-system, BlinkMacSystemFont,
@@ -14,17 +13,20 @@ body {
                roboto, noto,
                'segoe ui', arial,
                sans-serif;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
 }
+
+
 
 
 h2 {
   font-weight: 300;
-  line-height: 110px;
-  font-size: 100px;
+  line-height: 65px;
+  font-size: 60px;
   letter-spacing: -0.02em;
   margin: 0;
 }
+
 
 
 h3 {
@@ -52,31 +54,43 @@ h5 {
   font-size: 16px;
 }
 
+
+
+
 .footerText {
   position: fixed;
-  right: 1vw;
-  bottom:-20px;
+  right: 17px;
+  top:-5px;
+  bottom: auto;
   /* letter-spacing: -0.02em; */
   margin: 0;
 
 }
-
 
 .footerLogo {
   position: fixed;
-  left: 22px;
-  bottom:-20px;
+  left: 17px;
+  bottom:auto;
+  top: -10px;
   /* letter-spacing: -0.02em; */
   margin: 0;
 }
 
+
+
+
+
+iframe {
+  width: 340px;
+  height: 166px;
+}
+
+
 .scloud {
   margin-right:-20px;
-  margin-top:-100px;
-  margin-bottom:-50px;
+  margin-top:0px;
+  margin-bottom:-20px;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
-  /* width: 400;
-  height: 166; */
 }
 
 
@@ -88,6 +102,110 @@ h5 {
 .circle {
   position: absolute;
   z-index: -1;
-  left: 350px;
-  top: 100px;
+  left: 20px;
+  top: 135px;
+  overflow: hidden;
+}
+
+
+a {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+  }
+
+
+
+
+
+
+
+
+
+
+/* -----------  Responsive shizzle */
+
+@media screen and (min-width: 30em) {
+
+  h2 {
+    font-weight: 300;
+    line-height: 110px;
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 'avenir next', avenir,
+                 helvetica, 'helvetica neue',
+                 ubuntu,
+                 roboto, noto,
+                 'segoe ui', arial,
+                 sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+  }
+
+
+  h5 {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 'avenir next', avenir,
+                 helvetica, 'helvetica neue',
+                 ubuntu,
+                 roboto, noto,
+                 'segoe ui', arial,
+                 sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+
+  .footerText {
+    position: fixed;
+    right: 22px;
+    top:auto;
+    bottom:-23px;
+    /* letter-spacing: -0.02em; */
+    margin: 0;
+
+  }
+
+
+  .footerLogo {
+    position: fixed;
+    left: 22px;
+    bottom:-20px;
+    top: auto;
+    /* letter-spacing: -0.02em; */
+    margin: 0;
+  }
+
+  .scloud {
+    margin-right:-20px;
+    margin-top:-100px;
+    margin-bottom:-50px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
+  }
+
+  iframe {
+    width: 500px;
+    height: 166px;
+  }
+
+  .circle {
+    position: absolute;
+    z-index: -1;
+    left: 350px;
+    top: 100px;
+    overflow: hidden;
+  }
+
+
 }
