@@ -88,7 +88,7 @@ iframe {
 .scloud {
   margin-right:-20px;
   margin-top:0px;
-  margin-bottom:-20px;
+  margin-bottom:-10px;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
 }
 
@@ -99,7 +99,7 @@ iframe {
   position: absolute;
   z-index: -1;
   left: 20px;
-  top: 135px;
+  top: 480px;
   overflow: hidden;
 }
 
@@ -200,7 +200,7 @@ a {
     position: absolute;
     z-index: -1;
     left: 350px;
-    top: 100px;
+    top: 400px;
     overflow: hidden;
   }
 
