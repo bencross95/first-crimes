@@ -99,7 +99,7 @@ iframe {
   position: absolute;
   z-index: -1;
   left: 20px;
-  top: 480px;
+  top: 490px;
   overflow: hidden;
 }
 
@@ -200,7 +200,7 @@ a {
     position: absolute;
     z-index: -1;
     left: 350px;
-    top: 400px;
+    top: 690px;
     overflow: hidden;
   }
 
