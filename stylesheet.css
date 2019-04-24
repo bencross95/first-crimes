@@ -102,7 +102,7 @@ article {
   position: absolute;
   z-index: -1;
   left: 20px;
-  top: 490px;
+  top: 1150px;
   overflow: hidden;
 }
 
@@ -212,7 +212,7 @@ a {
     position: absolute;
     z-index: -1;
     left: 350px;
-    top: 690px;
+    top: 1150px;
     overflow: hidden;
   }
 
