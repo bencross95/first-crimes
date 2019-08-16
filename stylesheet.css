@@ -101,8 +101,8 @@ article {
 .circle {
   position: absolute;
   z-index: -1;
-  left: 20px;
-  top: 2000px;
+  left: 40px;
+  top: 530px;
   overflow: hidden;
 }
 
@@ -212,7 +212,7 @@ a {
     position: absolute;
     z-index: -1;
     left: 350px;
-    top: 1250px;
+    top: 100px;
     overflow: hidden;
   }
 
