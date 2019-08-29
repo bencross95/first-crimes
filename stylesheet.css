@@ -123,6 +123,7 @@ iframe {
 
 .emailLink {
   text-decoration: underline;
+  display: inline;
 }
 
 .scloud {
