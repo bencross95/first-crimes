@@ -27,10 +27,12 @@ h2 {
   margin: 0;
 }
 
-
+font-family: nimbus-sans, sans-serif;
+font-weight: 400;
+font-style: normal;
 
 h3 {
-  font-family: -apple-system, BlinkMacSystemFont,
+  font-family: nimbus-sans, -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                helvetica, 'helvetica neue',
                ubuntu,
@@ -43,7 +45,7 @@ h3 {
 
 
 h5 {
-  font-family: -apple-system, BlinkMacSystemFont,
+  font-family: nimbus-sans, -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                helvetica, 'helvetica neue',
                ubuntu,
@@ -55,9 +57,23 @@ h5 {
 }
 
 
+p {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
 
+/* font-family: nimbus-sans, sans-serif;
+
+font-weight: 400;
+
+font-style: italic; */
 
 .footerText {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   position:static;
   right: 22px;
   top:auto;
@@ -68,22 +84,46 @@ h5 {
 }
 
 .footerLogo {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
   position: absolute;
   left: 17px;
   bottom:auto;
-  top: -4.5px;
+  top: -7px;
+  display: none;
   /* letter-spacing: -0.02em; */
 
 }
 
+.navBar {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  text-align: left;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  display: inline;
+  padding-right: 20px;
+}
 
 iframe {
   width: 340px;
   height: 166px;
 }
 
+.emailLink {
+  text-decoration: underline;
+}
 
 .scloud {
   margin-right:-20px;
@@ -119,7 +159,10 @@ a {
     font-family: inherit;
   }
 
-
+  a:hover {
+    /* font-style: italic; */
+    text-decoration: underline;
+  }
 
 @media screen and (max-width: 374px) {
   /* article {
@@ -141,6 +184,12 @@ a {
 
 @media screen and (min-width: 50em) {
 
+  p {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   h2 {
     font-weight: 300;
     line-height: 110px;
@@ -150,26 +199,12 @@ a {
   }
 
   h3 {
-    font-family: -apple-system, BlinkMacSystemFont,
-                 'avenir next', avenir,
-                 helvetica, 'helvetica neue',
-                 ubuntu,
-                 roboto, noto,
-                 'segoe ui', arial,
-                 sans-serif;
     font-weight: normal;
     font-size: 25px;
   }
 
 
   h5 {
-    font-family: -apple-system, BlinkMacSystemFont,
-                 'avenir next', avenir,
-                 helvetica, 'helvetica neue',
-                 ubuntu,
-                 roboto, noto,
-                 'segoe ui', arial,
-                 sans-serif;
     font-weight: normal;
     font-size: 16px;
   }
@@ -187,6 +222,15 @@ a {
   }
 
 
+  .navBar {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    text-align: left;
+  }
+
+
   .footerLogo {
     position: fixed;
     left: 22px;
@@ -194,6 +238,8 @@ a {
     top: auto;
     /* letter-spacing: -0.02em; */
     margin: 0;
+    display: inline;
+
   }
 
   .scloud {
