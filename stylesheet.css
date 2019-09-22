@@ -137,6 +137,10 @@ article {
   overflow: hidden;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 
 .circle {
   position: absolute;
