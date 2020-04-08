@@ -18,6 +18,10 @@ body {
 
 
 
+.mixtapes {
+  height: 400px;
+}
+
 
 h2 {
   font-weight: 300;
@@ -147,6 +151,13 @@ iframe {
   height: 166px;
 }
 
+
+.mixtapeIframe {
+  width: 340px;
+  height: 450px;
+  display: inline;
+}
+
 .emailLink {
   text-decoration: underline;
 }
@@ -210,6 +221,12 @@ a {
   iframe {
     width: 89vw;
     height: 166px;
+  }
+
+  .mixtapeIframe {
+    width: 89vw;
+    height: 450px;
+    display: inline;
   }
 }
 
@@ -310,6 +327,20 @@ a {
   iframe {
     width: 500px;
     height: 166px;
+  }
+
+  /* iframe {
+    width: 500px;
+  } */
+
+ .singleIframe {
+   display: inline;
+ }
+
+  .mixtapeIframe {
+    width: 500px;
+    height: 450px;
+    display: inline;
   }
 
   .circle {
