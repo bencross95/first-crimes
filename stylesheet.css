@@ -17,10 +17,22 @@ body {
 }
 
 
+.releaseBlack {
+  margin-top: 30px;
+  background-color: #1A1A1A;
+  height: 100%;
+}
 
 .mixtapes {
   height: 400px;
 }
+
+.releaseText {
+  color: white;
+  padding-bottom: 30px;
+}
+
+
 
 
 h2 {
@@ -45,6 +57,7 @@ h3 {
   font-weight: 500;
   font-size: 25px;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 
@@ -228,9 +241,43 @@ a {
     height: 450px;
     display: inline;
   }
+
+  .releaseText {
+    color: white;
+  }
+
 }
 
 
+@media screen and (max-width: 1040px) {
+  /* body {
+    background-color: lime;
+  } */
+
+  .releaseImage {
+    width: 100% !important;
+    float: left;
+    margin-right: 0px;
+    padding-bottom: 40px;
+  }
+
+  .releaseBlack {
+    margin-top: 30px;
+    background-color: #1A1A1A;
+    height: 100% !important;
+  }
+
+  .mixtapes {
+    height: 400px;
+  }
+
+  .releaseText {
+    padding-top: 60px;
+    color: white;
+    padding-bottom: 30px;
+  }
+
+}
 
 
 
@@ -349,6 +396,23 @@ a {
     left: 350px;
     top: 400px;
     overflow: hidden;
+  }
+
+
+  .releaseBlack {
+    margin-top: 40px;
+    background-color: #1A1A1A;
+    height: 78vh;
+  }
+
+  .releaseImage {
+    width: 70vh;
+    float: left;
+    margin-right: 40px;
+  }
+
+  .releaseText {
+    color: white;
   }
 
 
