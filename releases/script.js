@@ -118,6 +118,13 @@ function initWater() {
 function init() {
 
   scene = new THREE.Scene();
+  renderer = new THREE.WebGLRenderer({
+    antialias: true
+  });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+
   scene.background = new THREE.Color(0xdddddd);
 
   camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 5000);
@@ -391,10 +398,19 @@ function compassFunction() {
     document.getElementById("compassWest").style.opacity = 0.1;
   };
 
-
+  window.addEventListener('resize', onWindowResize);
 
 }
 
+
+function onWindowResize() {
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+}
 
 // if compass direction changes, run the compass UI conditionals
 
