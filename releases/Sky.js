@@ -70,7 +70,8 @@ THREE.Sky.SkyShader = {
 
 		// 'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 1.3562911419845635E-5, 3.0265902468824876E-5 );',
     // 'const vec3 totalRayleigh = vec3( 0.804542996261093E-6, 1.3562911419845635E-5, 5.0265902468824876E-5 );',
-		'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 4.3562911419845635E-5, 3.0265902468824876E-5 );',
+		// 'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 4.3562911419845635E-5, 3.0265902468824876E-5 );',
+    'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 7.3562911419845635E-5, 3.0265902468824876E-5 );',
 
   	// mie stuff
 		// K coefficient for the primaries
