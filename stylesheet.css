@@ -1,419 +1,291 @@
 @font-face {
-  font-family: 'Ogg-Roman';
-  src:  url('fonts/Ogg-Roman.woff2') format('woff2'),
-        url('fonts/Ogg-Roman.woff') format('woff');
+  font-family: 'NBArchitektStd-Bold';
+  src: url('fonts/NBArchitektStd-Bold.woff2') format('woff2'),
+    url('fonts/NBArchitektStd-Bold.woff') format('woff');
 }
 
+html {
+  background-color: #C7C8C4;
+}
 
 body {
-  font-family: 'Ogg-Roman', -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+  font-family: 'NBArchitektStd-Bold', -apple-system, BlinkMacSystemFont,
+    'avenir next', avenir,
+    helvetica, 'helvetica neue',
+    ubuntu,
+    roboto, noto,
+    'segoe ui', arial,
+    sans-serif;
   /* overflow-x: hidden; */
 }
 
-
-.releaseBlack {
-  margin-top: 30px;
-  background-color: #1A1A1A;
-  height: 100%;
+h1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: justify;
+  text-justify: inter-word;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 2px;
 }
-
-.mixtapes {
-  height: 400px;
-}
-
-.releaseText {
-  color: white;
-  padding-bottom: 30px;
-}
-
-
-
 
 h2 {
-  font-weight: 300;
-  line-height: 65px;
-  font-size: 60px;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-
-
-h3 {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
-  font-size: 25px;
-  text-transform: uppercase;
-  line-height: 1.4;
-}
-
-
-h5 {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: justify;
+  text-justify: inter-word;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 2px;
 }
-
 
 p {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
-  font-size: 22px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: justify;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 2px;
 }
 
 
-
-.footerText {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
-  position:static;
-  right: 22px;
-  top:auto;
-  bottom:-23px;
-  /* letter-spacing: -0.02em; */
-  margin: 0;
-  opacity: 0;
-  text-transform: uppercase;
+.tiny-text {
+  font-size: 12px;
+  vertical-align: top;
 }
 
-.footerLogo {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
-  font-size: 23px;
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.text-black {
+  color: #212121;
+  text-shadow: 0px 0px 0.584817px #212121;
+}
+
+.text-grey {
+  color: #B9BAB6;
+  text-shadow: none;
+}
+
+.main-section {
+  max-width: 300px;
+  margin-left: 300px;
+  margin-top: 180px;
+  position: relative;
+}
+
+#fm-shape {
   position: absolute;
-  left: 17px;
-  bottom:auto;
-  top: -7px;
+  z-index: -2;
+  left: 0px;
+  display: inline-block;
+}
+
+#roe-shape {
+  position: absolute;
+  z-index: -2;
+  left: 0px;
+  display: inline-block;
+}
+
+#fm-shape-mob {
   display: none;
-  text-transform: uppercase;
-  /* letter-spacing: -0.02em; */
-
 }
 
-.navBar {
-  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-  font-weight: normal;
-  font-weight: 500;
-  font-size: 23px;
-  text-align: left;
-  text-transform: uppercase;
+#roe-shape-mob {
+  display: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.fm-div {
+  position: relative;
 }
 
-li {
-  display: inline;
-  padding-right: 20px;
-}
-
-iframe {
-  width: 340px;
-  height: 166px;
-}
-
-
-.mixtapeIframe {
-  width: 340px;
-  height: 450px;
-  display: inline;
-}
-
-.emailLink {
-  text-decoration: underline;
-}
-
-.scloud {
-  margin-right:-20px;
-  margin-top:0px;
-  margin-bottom:-10px;
-  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
-}
-
-
-article {
-  overflow: hidden;
-}
-
-.line-through {
-  text-decoration: line-through;
-}
-
-
-.circle {
+.fm-content {
   position: absolute;
-  z-index: -1;
-  left: 40px;
-  top: 600px;
-  overflow: hidden;
+  z-index: -1px;
+  left: 440px;
+  top: 91px;
+  width: 120px;
 }
 
-
-.info-poster {
-  width: 70vw;
-  height: auto;
+.roe-div {
+  position: relative;
+  margin-top: 0px;
 }
 
+.roe-content {
+  position: absolute;
+  z-index: -1px;
+  left: 440px;
+  top: 207px;
+  width: 120px;
+}
 
+.top-shape-1 {
+  top: 0px;
+  left: 300px;
+  position: fixed;
+}
 
+.top-shape-2 {
+  top: 96px;
+  left: 300px;
+  position: fixed;
+}
+
+.fm-mobile-line {
+  display: none;
+}
+
+.roe-mobile-line {
+  display: none;
+}
+
+.bio {
+  margin-top: 48px;
+}
+
+.info {
+  margin-top: 48px
+}
 
 a {
-    font-style: inherit;
-    color: inherit;
-    background-color: transparent;
-    font-size: inherit;
-    text-decoration: none;
-    font-variant: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    font-family: inherit;
-  }
-
-  a:hover {
-    /* font-style: italic; */
-    text-decoration: underline;
-  }
-
-@media screen and (max-width: 374px) {
-  /* article {
-    background-color: lime;
-  } */
-
-  iframe {
-    width: 89vw;
-    height: 166px;
-  }
-
-  .mixtapeIframe {
-    width: 89vw;
-    height: 450px;
-    display: inline;
-  }
-
-  .releaseText {
-    color: white;
-  }
-
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
 }
 
+a:hover {
+  /* font-style: italic; */
+  /* text-decoration: underline; */
+  color: #D7FA6E;
+  text-shadow: 0px 0px 0.584817px #D7FA6E;
+}
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 880px) {
+
   /* body {
     background-color: lime;
   } */
-
-  .releaseImage {
-    width: 100% !important;
-    float: left;
-    margin-right: 0px;
-    padding-bottom: 40px;
+  .main-section {
+    max-width: 300px;
+    margin-left: 16px;
+    margin-top: 190px;
+    position: relative;
   }
 
-  .releaseBlack {
-    margin-top: 30px;
-    background-color: #1A1A1A;
-    height: 100% !important;
+  .top-shape-1 {
+    top: 0px;
+    left: 16px;
+    position: fixed;
   }
 
-  .mixtapes {
-    height: 400px;
+  .top-shape-2 {
+    top: 96px;
+    left: 16px;
+    position: fixed;
   }
 
-  .releaseText {
-    padding-top: 60px;
-    color: white;
-    padding-bottom: 30px;
+  .info {
+    margin-bottom: 180px;
   }
-
 }
 
+@media screen and (max-width: 600px) {
 
-
-
-/* -----------  Responsive shizzle */
-
-@media screen and (min-width: 50em) {
-
-  .info-poster {
-    width: 500px;
-    height: auto;
-  }
-
-  p {
-    font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-                 'avenir next', avenir,
-                 helvetica, 'helvetica neue',
-                 ubuntu,
-                 roboto, noto,
-                 'segoe ui', arial,
-                 sans-serif;
-    font-weight: 500;
-    font-weight: normal;
-    text-transform: uppercase;
-
-  }
-
-  h2 {
-    font-weight: 300;
-    line-height: 110px;
-    font-size: 100px;
-    letter-spacing: -0.02em;
-    margin: 0;
-  }
-
-  h3 {
-    font-weight: normal;
-    font-size: 25px;
-  }
-
-
-  h5 {
-    font-weight: normal;
-    font-size: 16px;
-  }
-
-
-  .footerText {
-    position: fixed;
-    right: 22px;
-    top:auto;
-    bottom:-23px;
-    /* letter-spacing: -0.02em; */
-    margin: 0;
-    opacity: 1;
-
-  }
-
-
-  .navBar {
-    font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
-                 'avenir next', avenir,
-                 helvetica, 'helvetica neue',
-                 ubuntu,
-                 roboto, noto,
-                 'segoe ui', arial,
-                 sans-serif;
-    font-weight: 500;
-    font-weight: normal;
-    font-size: 23px;
-    text-align: left;
-    text-transform: uppercase;
-  }
-
-
-  .footerLogo {
-    position: fixed;
-    left: 22px;
-    bottom:-20px;
-    top: auto;
-    /* letter-spacing: -0.02em; */
-    margin: 0;
-    display: inline;
-
-  }
-
-  .scloud {
-    margin-right:-20px;
-    margin-top:-100px;
-    margin-bottom:-50px;
-    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
-  }
-
-  iframe {
-    width: 500px;
-    height: 166px;
-  }
-
-  /* iframe {
-    width: 500px;
+  /* body {
+    background-color: lime;
   } */
-
- .singleIframe {
-   display: inline;
- }
-
-  .mixtapeIframe {
-    width: 500px;
-    height: 370px;
-    display: inline;
+  .main-section {
+    max-width: 300px;
+    margin-left: 16px;
+    margin-top: 190px;
+    position: relative;
   }
 
-  .circle {
+  .top-shape-1 {
+    top: 0px;
+    left: 16px;
+    position: fixed;
+  }
+
+  .top-shape-2 {
+    display: none;
+  }
+
+  #fm-shape {
+    display: none;
+  }
+
+  #roe-shape {
+    display: none;
+  }
+
+  .fm-content {
+    position: relative;
+    z-index: -1px;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    margin-top: 16px;
+    margin-bottom: -12px;
+  }
+
+  .roe-content {
+    position: relative;
+    z-index: -1px;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    margin-top: 16px;
+    margin-bottom: -12px;
+  }
+
+  .roe-div {
+    margin-top: 48px;
+  }
+
+  .fm-mobile-line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+
+  .roe-mobile-line {
+    display: inline-block;
+    margin: 0;
+  }
+
+  #fm-shape-mob {
     position: absolute;
-    z-index: -1;
-    left: 350px;
-    top: 400px;
-    overflow: hidden;
+    z-index: -2;
+    left: 0px;
+    display: inline-block;
   }
 
-
-  .releaseBlack {
-    margin-top: 40px;
-    background-color: #151415;
-    height: 78vh;
+  #roe-shape-mob {
+    position: absolute;
+    z-index: -2;
+    left: 0px;
+    display: inline-block;
   }
-
-  .releaseImage {
-    width: 70vh;
-    float: left;
-    margin-right: 40px;
-  }
-
-  .releaseText {
-    color: white;
-  }
-
-
 }
