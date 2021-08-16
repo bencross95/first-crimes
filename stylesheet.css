@@ -19,6 +19,9 @@ body {
   /* overflow-x: hidden; */
 }
 
+::-moz-selection { background: #D7FA6E; }
+::selection { background: #D7FA6E; }
+
 h1 {
   font-size: 16px;
   font-style: normal;
@@ -156,7 +159,7 @@ p {
 }
 
 .bio {
-  margin-top: 53px;
+  margin-top: 55px;
 }
 
 .info {
