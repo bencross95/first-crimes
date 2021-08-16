@@ -9,7 +9,9 @@ html {
 }
 
 body {
-  font-family: 'NBArchitektStd-Bold';
+  font-family: 'NBArchitektStd-Bold',  Consolas,
+               monaco,
+               monospace;
   /* overflow-x: hidden; */
 }
 
