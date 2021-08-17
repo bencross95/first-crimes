@@ -9,14 +9,19 @@ html {
 }
 
 body {
-  font-family: 'NBArchitektStd-Bold',  Consolas,
-               monaco,
-               monospace;
+  font-family: 'NBArchitektStd-Bold', Consolas,
+    monaco,
+    monospace;
   /* overflow-x: hidden; */
 }
 
-::-moz-selection { background: #D7FA6E; }
-::selection { background: #D7FA6E; }
+::-moz-selection {
+  background: #D7FA6E;
+}
+
+::selection {
+  background: #D7FA6E;
+}
 
 h1 {
   font-size: 16px;
@@ -56,7 +61,6 @@ p {
   margin-bottom: 2px;
 }
 
-
 .tiny-text {
   font-size: 12px;
   vertical-align: top;
@@ -72,12 +76,13 @@ p {
 
 .text-black {
   color: #212121;
-  text-shadow: 0px 0px 0.584817px #212121;
+  text-shadow: 0px 0px 0.6px #212121;
 }
 
 .text-grey {
   color: #B9BAB6;
   text-shadow: none;
+  /* text-shadow: 0px 0px 0.6px #B9BAB6; */
 }
 
 .main-section {
@@ -178,7 +183,16 @@ a:hover {
   /* font-style: italic; */
   /* text-decoration: underline; */
   color: #D7FA6E;
-  text-shadow: 0px 0px 0.584817px #D7FA6E;
+  text-shadow: 0px 0px 0.6px #D7FA6E;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @media {
+    .text-black {
+      color: #212121;
+      text-shadow: 0px 0px 1px #212121;
+    }
+  }
 }
 
 @media screen and (max-width: 880px) {
