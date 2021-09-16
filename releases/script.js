@@ -433,6 +433,7 @@ function init() {
     console.log('Loading Complete!');
 
     document.getElementById("load-div").style.display = 'none';
+      document.getElementById("bottomText").style.animation = 'none';
   };
 
 
