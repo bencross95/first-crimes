@@ -70,11 +70,13 @@ h3 {
   display: inline-block;
 }
 
-.UI {
-  animation: UI 0.2s linear infinite;
+
+
+.bottomText {
+  animation: bottomText 0.2s linear infinite;
 }
 
-@keyframes UI {
+@keyframes bottomText {
   50% { opacity: 0; }
 }
 
