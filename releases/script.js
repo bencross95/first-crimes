@@ -132,7 +132,14 @@ function init() {
   camera.position.x = 0;
   camera.position.y = 50;
   camera.position.z = 0;
-  camera.rotateY(0.07);
+  // camera.rotateY(0.07);
+
+
+// debug tool
+
+  camera.rotateY(14.1);
+  camera.rotateX(0.35);
+
 
 
   // sph.setFromVector3(dir);
@@ -160,6 +167,9 @@ function init() {
 
   // Videos --------------------------------------------------
 
+
+  // ADD THE VIDEO FILES IN FALSE-MEMORIES.HTML
+
   // Video 1
   video1 = document.getElementById('videotexture1');
   var texture1 = new THREE.VideoTexture(video1);
@@ -170,9 +180,9 @@ function init() {
   };
   var videoMaterial1 = new THREE.MeshBasicMaterial(videoParameters1);
 
-  var videoGeometry1 = new THREE.PlaneGeometry(30, 30, 1);
+  var videoGeometry1 = new THREE.PlaneGeometry(33, 30, 1);
   var videoPlane1 = new THREE.Mesh(videoGeometry1, videoMaterial1);
-  videoPlane1.position.set(-81, 264, -750);
+  videoPlane1.position.set(-360, 291, -750);
   scene.add(videoPlane1);
 
 
@@ -184,9 +194,9 @@ function init() {
     map: texture2
   };
   var videoMaterial2 = new THREE.MeshBasicMaterial(videoParameters2);
-  var videoGeometry2 = new THREE.PlaneGeometry(72, 30, 1);
+  var videoGeometry2 = new THREE.PlaneGeometry(70, 70, 1);
   var videoPlane2 = new THREE.Mesh(videoGeometry2, videoMaterial2);
-  videoPlane2.position.set(-14, 119, -750);
+  videoPlane2.position.set(-148, 397, -750);
   scene.add(videoPlane2);
 
 
@@ -198,25 +208,27 @@ function init() {
     map: texture3
   };
   var videoMaterial3 = new THREE.MeshBasicMaterial(videoParameters3);
-  var videoGeometry3 = new THREE.PlaneGeometry(30, 30, 1);
+  var videoGeometry3 = new THREE.PlaneGeometry(154, 112, 1);
   var videoPlane3 = new THREE.Mesh(videoGeometry3, videoMaterial3);
-  videoPlane3.position.set(620, 180, -15);
-  videoPlane3.rotateY(-1.6);
+  videoPlane3.position.set(94, 143, -750);
   scene.add(videoPlane3);
+
+
+
 
 
   // Video 4
   video4 = document.getElementById('videotexture4');
-  var texture4 = new THREE.VideoTexture(video4);
+  var texture4 = new THREE.VideoTexture(video3);
   var videoParameters4 = {
     color: 0xffffff,
     map: texture4
   };
   var videoMaterial4 = new THREE.MeshBasicMaterial(videoParameters4);
-  var videoGeometry4 = new THREE.PlaneGeometry(47, 30, 1);
+  var videoGeometry4 = new THREE.PlaneGeometry(200, 200, 1);
   var videoPlane4 = new THREE.Mesh(videoGeometry4, videoMaterial4);
-  videoPlane4.position.set(-19, 162, 710);
-  videoPlane4.rotateY(-3.2);
+  videoPlane4.position.set(773, 396, 0);
+  videoPlane4.rotateY(-1.55);
   scene.add(videoPlane4);
 
 
@@ -228,12 +240,11 @@ function init() {
     map: texture5
   };
   var videoMaterial5 = new THREE.MeshBasicMaterial(videoParameters5);
-  var videoGeometry5 = new THREE.PlaneGeometry(72, 30, 1);
+  var videoGeometry5 = new THREE.PlaneGeometry(58, 110, 1);
   var videoPlane5 = new THREE.Mesh(videoGeometry5, videoMaterial5);
-  videoPlane5.position.set(-63, 122, 716);
-  videoPlane5.rotateY(-3.2);
+  videoPlane5.position.set(775, 537, -340);
+  videoPlane5.rotateY(-1.55);
   scene.add(videoPlane5);
-
 
   // Video 6
   video6 = document.getElementById('videotexture6');
@@ -243,10 +254,10 @@ function init() {
     map: texture6
   };
   var videoMaterial6 = new THREE.MeshBasicMaterial(videoParameters6);
-  var videoGeometry6 = new THREE.PlaneGeometry(50, 50, 1);
+  var videoGeometry6 = new THREE.PlaneGeometry(198, 40, 1);
   var videoPlane6 = new THREE.Mesh(videoGeometry6, videoMaterial6);
-  videoPlane6.position.set(-763, 100, -65);
-  videoPlane6.rotateY(-4.72);
+  videoPlane6.position.set(776, 442, 263);
+  videoPlane6.rotateY(-1.57);
   scene.add(videoPlane6);
 
 
@@ -259,11 +270,78 @@ function init() {
     map: texture7
   };
   var videoMaterial7 = new THREE.MeshBasicMaterial(videoParameters7);
-  var videoGeometry7 = new THREE.PlaneGeometry(50, 382, 1);
+  var videoGeometry7 = new THREE.PlaneGeometry(240, 144, 1);
   var videoPlane7 = new THREE.Mesh(videoGeometry7, videoMaterial7);
-  videoPlane7.position.set(-763, 265, 1);
-  videoPlane7.rotateY(-4.72);
+  videoPlane7.position.set(171.5, 292, 630);
+  videoPlane7.rotateY(-3.15);
   scene.add(videoPlane7);
+
+
+
+  // Video 8
+  video8 = document.getElementById('videotexture8');
+  var texture8 = new THREE.VideoTexture(video8);
+  var videoParameters8 = {
+    color: 0xffffff,
+    map: texture8
+  };
+  var videoMaterial8 = new THREE.MeshBasicMaterial(videoParameters8);
+  var videoGeometry8 = new THREE.PlaneGeometry(297, 82, 1);
+  var videoPlane8 = new THREE.Mesh(videoGeometry8, videoMaterial8);
+  videoPlane8.position.set(-158.5, 163.5, 630);
+  videoPlane8.rotateY(-3.15);
+  scene.add(videoPlane8);
+
+
+
+  // Video 9
+  video9 = document.getElementById('videotexture9');
+  var texture9 = new THREE.VideoTexture(video9);
+  var videoParameters9 = {
+    color: 0xffffff,
+    map: texture9
+  };
+  var videoMaterial9 = new THREE.MeshBasicMaterial(videoParameters9);
+  var videoGeometry9 = new THREE.PlaneGeometry(80, 80, 1);
+  var videoPlane9 = new THREE.Mesh(videoGeometry9, videoMaterial9);
+  videoPlane9.position.set(-454, 322, 630);
+  videoPlane9.rotateY(-3.15);
+  scene.add(videoPlane9);
+
+
+
+
+  // Video 10
+  video10 = document.getElementById('videotexture10');
+  var texture10 = new THREE.VideoTexture(video10);
+  var videoParameters10 = {
+    color: 0xffffff,
+    map: texture10
+  };
+  var videoMaterial10 = new THREE.MeshBasicMaterial(videoParameters10);
+  var videoGeometry10 = new THREE.PlaneGeometry(180, 543, 1);
+  var videoPlane10 = new THREE.Mesh(videoGeometry10, videoMaterial10);
+  videoPlane10.position.set(-749, 347, -1);
+  videoPlane10.rotateY(-4.71);
+  scene.add(videoPlane10);
+
+
+
+  // Video 11
+  video11 = document.getElementById('videotexture11');
+  var texture11 = new THREE.VideoTexture(video11);
+  var videoParameters11 = {
+    color: 0xffffff,
+    map: texture11
+  };
+  var videoMaterial11 = new THREE.MeshBasicMaterial(videoParameters11);
+  var videoGeometry11 = new THREE.PlaneGeometry(100, 206, 1);
+  var videoPlane11 = new THREE.Mesh(videoGeometry11, videoMaterial11);
+  videoPlane11.position.set(-749, 175, -183);
+  videoPlane11.rotateY(-4.71);
+  scene.add(videoPlane11);
+
+
 
   //  --------------------------------------------------
 
