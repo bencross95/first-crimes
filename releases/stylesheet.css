@@ -58,6 +58,27 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+
+#load-shape {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #C7C8C4;
+  z-index: 1;
+  display: inline-block;
+}
+
+.UI {
+  animation: UI 0.2s linear infinite;
+}
+
+@keyframes UI {
+  50% { opacity: 0; }
+}
+
+
 .loadingScreen {
   /* display: none; */
   display: block;
@@ -98,6 +119,7 @@ h3 {
   box-shadow: 0px 0px 7px 0px #F32104 50% inset;
   writing-mode: vertical-rl;
   -webkit-transform: rotate(180deg);
+  z-index: 2
   /* half of width*/
 }
 

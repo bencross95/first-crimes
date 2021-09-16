@@ -135,10 +135,10 @@ function init() {
   // camera.rotateY(0.07);
 
 
-// debug tool
+  // debug tool
 
-  camera.rotateY(14.1);
-  camera.rotateX(0.35);
+  camera.rotateY(4.75);
+  camera.rotateX(0.4);
 
 
 
@@ -399,6 +399,50 @@ function init() {
 
 
 
+
+  THREE.DefaultLoadingManager.onProgress = function(url, itemsLoaded, itemsTotal) {
+
+    //
+    // const progressBarFull = document.getElementById('progressBarFull');
+    //
+    // progressBarFull.style.width = `${(itemsLoaded / itemsTotal) * 100}%`;
+
+    console.log(itemsLoaded / itemsTotal * 100);
+
+    // if (progressBarFull.style.width == "100%") {
+    //   document.getElementById("loading-objects-start").style.display = 'inline-block';
+    // }
+
+    // console.log(progressBarFull.style.width);
+
+    // var loadingClip = 0;
+
+    var loadingClip = itemsLoaded;
+
+    // 0 is minimum, 150 is maximum
+
+
+  };
+
+
+
+
+
+  THREE.DefaultLoadingManager.onLoad = function() {
+
+    console.log('Loading Complete!');
+
+    document.getElementById("load-div").style.display = 'none';
+  };
+
+
+
+
+
+
+
+
+
   let loader = new THREE.GLTFLoader();
   loader.load('models/screen3-1.gltf', function(gltf) {
     screen1 = gltf.scene.children[0];
@@ -412,23 +456,23 @@ function init() {
 }
 
 
-function initSound() {
-  // create an AudioListener and add it to the camera
-  var listener = new THREE.AudioListener();
-  camera.add(listener);
-
-  // create a global audio source
-  var sound = new THREE.Audio(listener);
-
-  // load a sound and set it as the Audio object's buffer
-  var audioLoader = new THREE.AudioLoader();
-  audioLoader.load('audio/RP1-intro.mp3', function(buffer) {
-    sound.setBuffer(buffer);
-    sound.setLoop(true);
-    sound.setVolume(0.5);
-    sound.play();
-  });
-}
+// function initSound() {
+//   // create an AudioListener and add it to the camera
+//   var listener = new THREE.AudioListener();
+//   camera.add(listener);
+//
+//   // create a global audio source
+//   var sound = new THREE.Audio(listener);
+//
+//   // load a sound and set it as the Audio object's buffer
+//   var audioLoader = new THREE.AudioLoader();
+//   audioLoader.load('audio/RP1-intro.mp3', function(buffer) {
+//     sound.setBuffer(buffer);
+//     sound.setLoop(true);
+//     sound.setVolume(0.5);
+//     sound.play();
+//   });
+// }
 
 
 

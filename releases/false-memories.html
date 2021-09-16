@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	<title>False Memories</title>
@@ -13,7 +13,7 @@
 
 
 
-<!-- <iframe class="soundcloud-frame" width="340px" height="130px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/984701287%3Fsecret_token%3Ds-c5yWDe2Kx0M&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+	<!-- <iframe class="soundcloud-frame" width="340px" height="130px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/984701287%3Fsecret_token%3Ds-c5yWDe2Kx0M&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
  -->
 
 
@@ -71,27 +71,32 @@
 	<script src="Water.js"></script>
 	<script src="script.js"></script>
 
+	<div class="load-div" id="load-div">
+		<div id="load-shape"></div>
+	</div>
 
-
-	<div id="compass">
-		<div id="compassCenterDiv">
-			<img id="compassCenter" src="images/compassCenter.svg">
+	<div class="UI" id="UI">
+		<div id="compass">
+			<div id="compassCenterDiv">
+				<img id="compassCenter" src="images/compassCenter.svg">
+			</div>
+			<img id="compassNorth" src="images/compassNorth.svg">
+			<img id="compassSouth" src="images/compassSouth.svg">
+			<img id="compassEast" src="images/compassEast.svg">
+			<img id="compassWest" src="images/compassWest.svg">
 		</div>
-		<img id="compassNorth" src="images/compassNorth.svg">
-		<img id="compassSouth" src="images/compassSouth.svg">
-		<img id="compassEast" src="images/compassEast.svg">
-		<img id="compassWest" src="images/compassWest.svg">
-	</div>
 
-	<div class="logo-top" id="logo-top">
-		<img src="images/logo-top@2x.png" alt="">
-	</div>
+		<div class="logo-top" id="logo-top">
+			<img src="images/logo-top@2x.png" alt="">
+		</div>
 
-	<div class="bottomText" id="bottomText">
-		<p class="pl3"><span class="code-text">&lt;&lt;Scanning for lifeforms&gt;&gt;</span> FALSE MEMORIES <span class="code-text">&lt;&lt;SCANNING FOR HEAT SIGNATURES&gt;&gt;</span> How much time has passed <span class="code-text">&lt;&lt;SCANNING FOR TEMPERATURE DROPS&gt;&gt;</span> I CANT KEEP MY HEAD ABOVE THE WATER.</p>
-		<p><span class="code-text">Initialising loading sequence alpha S00FL ··· 01 {lifeform found};<br> Loading scene ··· Emotion stabalising ___ Projection set</span></p>
+		<div class="bottomText" id="bottomText">
+			<p class="pl3"><span class="code-text">&lt;&lt;Scanning for lifeforms&gt;&gt;</span> FALSE MEMORIES <span class="code-text">&lt;&lt;SCANNING FOR HEAT SIGNATURES&gt;&gt;</span> How much time has passed <span class="code-text">&lt;&lt;SCANNING
+					FOR
+					TEMPERATURE DROPS&gt;&gt;</span> I CANT KEEP MY HEAD ABOVE THE WATER.</p>
+			<p><span class="code-text">Initialising loading sequence alpha S00FL ··· 01 {lifeform found};<br> Loading scene ··· Emotion stabalising ___ Projection set</span></p>
+		</div>
 	</div>
-
 
 </body>
 
