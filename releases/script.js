@@ -412,20 +412,17 @@ function init() {
 
     var loadAnimationSpeed = itemsLoaded / itemsTotal * 100
 
-    loadAnimationSpeed2 = 8/loadAnimationSpeed
-    //
+    loadAnimationSpeed2 = 8 / loadAnimationSpeed + 's'
+
     console.log(loadAnimationSpeed2);
-
-
 
 
     // var loady1 = "0.7";
     // loady1 += "s";
     //
     // console.log(loady1);
-    //
-    document.getElementById("bottomText").style.animationDuration = '${loadAnimationSpeed2}s';
 
+    document.getElementById("bottomText").style.animationDuration = loadAnimationSpeed2;
 
 
     // if (progressBarFull.style.width == "100%") {
@@ -452,7 +449,7 @@ function init() {
     console.log('Loading Complete!');
 
     document.getElementById("load-div").style.display = 'none';
-      document.getElementById("bottomText").style.animation = 'none';
+    document.getElementById("bottomText").style.animation = 'none';
   };
 
 

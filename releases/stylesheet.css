@@ -81,7 +81,7 @@ h3 {
   /* animation:  0.2s linear infinite; */
 
   animation-name: bottomText;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-direction: linear;
 
