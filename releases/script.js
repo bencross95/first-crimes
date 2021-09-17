@@ -416,13 +416,9 @@ function init() {
 
     console.log(loadAnimationSpeed2);
 
+    // document.getElementById("bottomText").style.animationDuration = loadAnimationSpeed2;
 
-    // var loady1 = "0.7";
-    // loady1 += "s";
-    //
-    // console.log(loady1);
 
-    document.getElementById("bottomText").style.animationDuration = loadAnimationSpeed2;
 
 
     // if (progressBarFull.style.width == "100%") {
@@ -450,6 +446,7 @@ function init() {
 
     document.getElementById("load-div").style.display = 'none';
     document.getElementById("bottomText").style.animation = 'none';
+    document.getElementById("loading-dots").style.display = 'none';
   };
 
 
