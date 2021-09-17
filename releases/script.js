@@ -407,7 +407,26 @@ function init() {
     //
     // progressBarFull.style.width = `${(itemsLoaded / itemsTotal) * 100}%`;
 
-    console.log(itemsLoaded / itemsTotal * 100);
+    // console.log(itemsLoaded / itemsTotal * 100);
+
+
+    var loadAnimationSpeed = itemsLoaded / itemsTotal * 100
+
+    loadAnimationSpeed2 = 8/loadAnimationSpeed
+    //
+    console.log(loadAnimationSpeed2);
+
+
+
+
+    // var loady1 = "0.7";
+    // loady1 += "s";
+    //
+    // console.log(loady1);
+    //
+    document.getElementById("bottomText").style.animationDuration = '${loadAnimationSpeed2}s';
+
+
 
     // if (progressBarFull.style.width == "100%") {
     //   document.getElementById("loading-objects-start").style.display = 'inline-block';
