@@ -84,6 +84,7 @@ h3 {
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-direction: linear;
+  animation-timing-function: ease-in-out;
 
 }
 
