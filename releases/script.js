@@ -56,7 +56,7 @@ function initSky() {
     mieDirectionalG: 0.15,
     luminance: 0.9,
     inclination: 0.47,
-    azimuth: 0.4,
+    azimuth: 1.4,
     sun: !true
   };
 
@@ -219,7 +219,7 @@ function init() {
 
   // Video 4
   video4 = document.getElementById('videotexture4');
-  var texture4 = new THREE.VideoTexture(video3);
+  var texture4 = new THREE.VideoTexture(video4);
   var videoParameters4 = {
     color: 0xffffff,
     map: texture4
