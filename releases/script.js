@@ -246,6 +246,7 @@ function init() {
   videoPlane5.rotateY(-1.55);
   scene.add(videoPlane5);
 
+
   // Video 6
   video6 = document.getElementById('videotexture6');
   var texture6 = new THREE.VideoTexture(video6);
