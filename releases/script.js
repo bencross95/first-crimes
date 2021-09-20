@@ -411,11 +411,11 @@ function init() {
     // console.log(itemsLoaded / itemsTotal * 100);
 
 
-    var loadAnimationSpeed = itemsLoaded / itemsTotal * 100
+    // var loadAnimationSpeed = itemsLoaded / itemsTotal * 100
+    //
+    // loadAnimationSpeed2 = 8 / loadAnimationSpeed + 's'
 
-    loadAnimationSpeed2 = 8 / loadAnimationSpeed + 's'
-
-    console.log(loadAnimationSpeed2);
+    // console.log(loadAnimationSpeed2);
 
     // document.getElementById("bottomText").style.animationDuration = loadAnimationSpeed2;
 
@@ -448,7 +448,7 @@ function init() {
     document.getElementById("load-div").style.display = 'none';
     document.getElementById("bottomText").style.animation = 'none';
     document.getElementById("loading-dots").style.display = 'none';
-    document.getElementById("soundcloud-frame").style.display = 'block';
+    document.getElementById("soundcloud-frame").style.display = 'inline-block';
 
 
   };
