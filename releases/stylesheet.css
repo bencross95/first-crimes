@@ -54,7 +54,9 @@ p {
   left: auto;
   z-index: 2;
   border-radius: 8px;
+  display: none;
 }
+
 
 h2 {
   font-size: 18px;
@@ -352,6 +354,7 @@ h3 {
     margin-right: auto;
     z-index: 2;
     border-radius: 8px;
+    display: none;
   }
 
   .loading-dots {
