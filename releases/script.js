@@ -448,7 +448,7 @@ function init() {
     document.getElementById("load-div").style.display = 'none';
     document.getElementById("bottomText").style.animation = 'none';
     document.getElementById("loading-dots").style.display = 'none';
-    document.getElementById("soundcloud-frame").style.display = 'inline-block';
+    document.getElementById("soundcloud-frame").style.display = 'inline';
 
 
   };

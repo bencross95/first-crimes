@@ -54,6 +54,9 @@ p {
   left: auto;
   z-index: 2;
   border-radius: 8px;
+}
+
+#soundcloud-frame {
   display: none;
 }
 
@@ -354,6 +357,9 @@ h3 {
     margin-right: auto;
     z-index: 2;
     border-radius: 8px;
+  }
+
+  #soundcloud-frame {
     display: none;
   }
 
