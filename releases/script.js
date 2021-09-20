@@ -459,8 +459,6 @@ function init() {
 
 
 
-
-
   let loader = new THREE.GLTFLoader();
   loader.load('models/screen3-1.gltf', function(gltf) {
     screen1 = gltf.scene.children[0];
