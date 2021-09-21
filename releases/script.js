@@ -54,7 +54,7 @@ function initSky() {
     rayleigh: 2,
     mieCoefficient: 0.018,
     mieDirectionalG: 0.15,
-    luminance: 0.9,
+    luminance: 1.1,
     inclination: 0.47,
     azimuth: 1.4,
     sun: !true
@@ -132,13 +132,14 @@ function init() {
   camera.position.x = 0;
   camera.position.y = 50;
   camera.position.z = 0;
-  // camera.rotateY(0.07);
+  // camera.rotateY(4.2);
 
 
   // debug tool
-
   camera.rotateY(4.75);
   camera.rotateX(0.4);
+
+
 
 
 
@@ -341,6 +342,23 @@ function init() {
   videoPlane11.position.set(-749, 175, -183);
   videoPlane11.rotateY(-4.71);
   scene.add(videoPlane11);
+
+
+
+  // Video 12
+  video12 = document.getElementById('videotexture12');
+  var texture12 = new THREE.VideoTexture(video12);
+  var videoParameters12 = {
+    color: 0xffffff,
+    map: texture12
+  };
+  var videoMaterial12 = new THREE.MeshBasicMaterial(videoParameters12);
+  var videoGeometry12 = new THREE.PlaneGeometry(78, 78, 1);
+  var videoPlane12 = new THREE.Mesh(videoGeometry12, videoMaterial12);
+  videoPlane12.position.set(-270, 244, 630);
+  videoPlane12.rotateY(-3.15);
+  scene.add(videoPlane12);
+
 
 
 

@@ -94,7 +94,17 @@ THREE.Sky.SkyShader = {
     // 'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 7.3562911419845635E-5, 3.0265902468824876E-5 );',
 
     // 'const vec3 totalRayleigh = vec3( 5.804542996261093E-6, 7.3562911419845635E-5, 2.1E-5 );',
-    'const vec3 totalRayleigh = vec3( 12.8045454372093E-6, 7.35629146245635E-5, 2.1234566E-5 );',
+    // 'const vec3 totalRayleigh = vec3( 12.8045454372093E-6, 7.35629146245635E-5, 2.1234566E-5 );',
+
+    // 'const vec3 totalRayleigh = vec3( 1.8045454372093E-6, 1.35629146245635E-5, 1.1234566E-5 );',
+
+    // 'const vec3 totalRayleigh = vec3( 10.8045454372093E-6, 1.35629146245635E-5, 1.1234566E-5 );',
+
+    'const vec3 totalRayleigh = vec3( 10E-5, 1, 1 );',
+
+    // 'const vec3 totalRayleigh = vec3( 0.01E-5, 25E-5, 1 );',
+
+    // 'const vec3 totalRayleigh = vec3( 5.8E-6, 1.3E-5, 3.2E-5 );',
 
 
     // mie stuff
