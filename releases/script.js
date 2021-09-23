@@ -8,7 +8,17 @@ animate();
 
 
 function clickBody() {
-  controls.lock();
+  if (window.innerWidth < 768) {
+    console.log("device orientation controls");
+    controls = new THREE.DeviceOrientationControls(camera, document.body)
+
+  } else {
+    console.log("pointer lock controls");
+      controls.lock();
+    controls = new THREE.PointerLockControls(camera, document.body);
+  }
+
+
 }
 
 var canvasVar = document.getElementsByTagName('canvas')
@@ -162,9 +172,6 @@ function init() {
     console.log(controls.object);
 
 
-    function clickBody() {
-      controls = new THREE.DeviceOrientationControls(camera, document.body)
-    }
 
 
     // controls = new THREE.PointerLockControls( camera, document.body );
