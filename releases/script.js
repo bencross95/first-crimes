@@ -8,17 +8,7 @@ animate();
 
 
 function clickBody() {
-  if (window.innerWidth < 768) {
-    console.log("device orientation controls");
-    controls = new THREE.DeviceOrientationControls(camera, document.body)
-
-  } else {
-    console.log("pointer lock controls");
-      controls.lock();
-    controls = new THREE.PointerLockControls(camera, document.body);
-  }
-
-
+  controls.lock();
 }
 
 var canvasVar = document.getElementsByTagName('canvas')
@@ -159,7 +149,7 @@ function init() {
   // console.log(vector);
 
 
-  // press on body to activate DeviceOrientationControls
+  // press on body
 
 
   if (window.innerWidth < 768) {
@@ -170,9 +160,6 @@ function init() {
 
     controls = new THREE.DeviceOrientationControls(camera, document.body)
     console.log(controls.object);
-
-
-
 
     // controls = new THREE.PointerLockControls( camera, document.body );
 
