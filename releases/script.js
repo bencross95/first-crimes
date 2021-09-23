@@ -149,13 +149,23 @@ function init() {
   // console.log(vector);
 
 
+  // press on body to activate DeviceOrientationControls
+
 
   if (window.innerWidth < 768) {
     console.log("device orientation controls");
     // controls = new THREE.DeviceOrientationControls( camera, document.body );
 
+
+
     controls = new THREE.DeviceOrientationControls(camera, document.body)
     console.log(controls.object);
+
+
+    function clickBody() {
+      controls = new THREE.DeviceOrientationControls(camera, document.body)
+    }
+
 
     // controls = new THREE.PointerLockControls( camera, document.body );
 
