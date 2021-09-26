@@ -60,7 +60,6 @@ p {
   display: none;
 }
 
-
 h2 {
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -82,15 +81,34 @@ h3 {
   display: inline-block;
 }
 
+#load-shape-mobile {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #C7C8C4;
+  z-index: 1;
+}
+
+#load-div-mobile {
+  display: none;
+}
+
+#load-div-mobile button {
+  top: 50%;
+  left: 150px;
+  position: absolute;
+  z-index: 3;
+}
+
 .bottomText {
   /* animation:  0.2s linear infinite; */
-
   animation-name: bottomText;
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
   animation-direction: linear;
   animation-timing-function: linear;
-
 }
 
 @keyframes bottomText {
@@ -142,48 +160,55 @@ h3 {
   0% {
     box-shadow: 9991px -16px 0 0 #F32104, 9991px 0 0 0 #F32104, 10007px 0 0 0 #F32104;
   }
+
   8.333% {
     box-shadow: 10007px -16px 0 0 #F32104, 9991px 0 0 0 #F32104, 10007px 0 0 0 #F32104;
   }
+
   16.667% {
     box-shadow: 10007px -16px 0 0 #F32104, 9991px -16px 0 0 #F32104, 10007px 0 0 0 #F32104;
   }
+
   25% {
     box-shadow: 10007px -16px 0 0 #F32104, 9991px -16px 0 0 #F32104, 9991px 0 0 0 #F32104;
   }
+
   33.333% {
     box-shadow: 10007px 0 0 0 #F32104, 9991px -16px 0 0 #F32104, 9991px 0 0 0 #F32104;
   }
+
   41.667% {
     box-shadow: 10007px 0 0 0 #F32104, 10007px -16px 0 0 #F32104, 9991px 0 0 0 #F32104;
   }
+
   50% {
     box-shadow: 10007px 0 0 0 #F32104, 10007px -16px 0 0 #F32104, 9991px -16px 0 0 #F32104;
   }
+
   58.333% {
     box-shadow: 9991px 0 0 0 #F32104, 10007px -16px 0 0 #F32104, 9991px -16px 0 0 #F32104;
   }
+
   66.666% {
     box-shadow: 9991px 0 0 0 #F32104, 10007px 0 0 0 #F32104, 9991px -16px 0 0 #F32104;
   }
+
   75% {
     box-shadow: 9991px 0 0 0 #F32104, 10007px 0 0 0 #F32104, 10007px -16px 0 0 #F32104;
   }
+
   83.333% {
     box-shadow: 9991px -16px 0 0 #F32104, 10007px 0 0 0 #F32104, 10007px -16px 0 0 #F32104;
   }
+
   91.667% {
     box-shadow: 9991px -16px 0 0 #F32104, 9991px 0 0 0 #F32104, 10007px -16px 0 0 #F32104;
   }
+
   100% {
     box-shadow: 9991px -16px 0 0 #F32104, 9991px 0 0 0 #F32104, 10007px 0 0 0 #F32104;
   }
 }
-
-
-
-
-
 
 .yellow-text {
   color: #EDFF20;
@@ -302,6 +327,20 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+  #load-shape-mobile {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #C7C8C4;
+    z-index: 1;
+  }
+
+  #load-div-mobile {
+    display: inline-block;
+  }
+
   h2 {
     font-size: 14px;
     letter-spacing: 0.2px;
@@ -368,6 +407,5 @@ h3 {
     z-index: 3;
     bottom: 60px;
     left: 50%;
-
   }
 }
