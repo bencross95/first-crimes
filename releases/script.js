@@ -20,9 +20,27 @@ initSound();
 
 
 
+// If mobile
+// show a plain colour and a startButton
+// click button to enable device orientation controls and remove button & load UI
+
+
+function requestOrientationPermission() {
+  controls.connect()
+  document.getElementById("load-div-mobile").style.display = 'none';
+}
+
+
 if (window.innerWidth < 768) {
   console.log("should be mobile");
   document.getElementById("logo-top").style.display = 'none';
+
+
+  document.getElementById("load-div-mobile").style.display = 'inline-block';
+
+
+
+
 } else {
   document.body.addEventListener('click', function() {
     //lock mouse on screen
@@ -154,11 +172,11 @@ function init() {
 
   if (window.innerWidth < 768) {
     console.log("device orientation controls");
-    // controls = new THREE.DeviceOrientationControls( camera, document.body );
-
 
 
     controls = new THREE.DeviceOrientationControls(camera, document.body)
+    controls.disconnect()
+
     console.log(controls.object);
 
     // controls = new THREE.PointerLockControls( camera, document.body );
