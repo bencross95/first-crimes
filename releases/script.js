@@ -28,7 +28,12 @@ initSound();
 function requestOrientationPermission() {
   controls.connect()
   document.getElementById("load-div-mobile").style.display = 'none';
+  document.getElementById("soundcloud-frame").style.display = 'inline';
 }
+
+
+
+
 
 
 if (window.innerWidth < 768) {
@@ -489,7 +494,17 @@ function init() {
     document.getElementById("load-div").style.display = 'none';
     document.getElementById("bottomText").style.animation = 'none';
     document.getElementById("loading-dots").style.display = 'none';
-    document.getElementById("soundcloud-frame").style.display = 'inline';
+
+
+
+    // if desktop load soundcloud
+
+
+    if (window.innerWidth < 768) {
+    } else {
+      document.getElementById("soundcloud-frame").style.display = 'inline';
+    }
+
 
 
   };
